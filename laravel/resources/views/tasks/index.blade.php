@@ -12,7 +12,7 @@
         <div class="card">
             <div class="card-body d-flex justify-content-between align-items-center">
                 <div>
-                    <h5 class="mb-1">{{ $task->title }}</h5>
+                    <h5 class="mb-1">{{ $task->name }}</h5>
                     <div class="d-flex gap-2">
                         <span class="badge bg-{{ $task->status === 'done' ? 'success' : ($task->status === 'in_progress' ? 'warning' : 'secondary') }}">
                             {{ match($task->status) {

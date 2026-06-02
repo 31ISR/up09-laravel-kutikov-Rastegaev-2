@@ -42,7 +42,7 @@
     @forelse($recentTasks as $task)
         <div class="card mb-2">
             <div class="card-body d-flex justify-content-between align-items-center py-2">
-                <span>{{ $task->title }}</span>
+                <span>{{ $task->name }}</span>
                 <div class="d-flex gap-2 align-items-center">
                     @if($task->category)
                         <span class="badge" @style(['background-color: ' . $task->category->color])>

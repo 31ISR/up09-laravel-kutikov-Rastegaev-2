@@ -11,10 +11,10 @@
                     @method('PUT')
                     <div class="mb-3">
                         <label class="form-label">Заголовок</label>
-                        <input type="text" name="title"
-                            class="form-control @error('title') is-invalid @enderror"
-                            value="{{ old('title', $task->title) }}" autofocus>
-                        @error('title')
+                        <input type="text" name="name"
+                            class="form-control @error('name') is-invalid @enderror"
+                            value="{{ old('name', $task->name) }}" autofocus>
+                        @error('name')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
